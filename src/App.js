@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import EmployerProfile from './components/Employer/EmployerProfile';
+import EmployeeProfile from './components/Employee/EmployeeProfile';
+import JobSearch from './components/Employee/JobSearch';
+import JobPosting from './components/Employer/JobPosting';
+import './styles/styles.css'; // Import the CSS file
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <h1>Job Platform</h1>
+        <Switch>
+          <Route path="/employer-profile" component={EmployerProfile} />
+          <Route path="/employee-profile" component={EmployeeProfile} />
+          <Route path="/job-search" component={JobSearch} />
+          <Route path="/job-posting" component={JobPosting} />
+        </Switch>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
