@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import EmployerProfile from './components/Employer/EmployerProfile';
 import EmployeeProfile from './components/Employee/EmployeeProfile';
 import JobSearch from './components/Employee/JobSearch';
-import JobPosting from './components/Employer/JobPosting';
+import JobPosting from '.EmployerProfile/components/Employer/JobPosting';
 import './styles/styles.css'; // Import the CSS file
 
 const App = () => {
