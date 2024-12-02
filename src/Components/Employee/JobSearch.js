@@ -19,7 +19,7 @@ const JobSearch = () => {
       <h2>Job Listings</h2>
       <ul>
         {jobs.map(job => (
-          <li key={job.id}>{job.title} at {job.companyName}</li>
+          <li key={job._id}>{job.title} at {job.company.companyName}</li>
         ))}
       </ul>
     </div>

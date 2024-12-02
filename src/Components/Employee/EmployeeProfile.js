@@ -1,4 +1,3 @@
-// src/components/Employee/EmployeeProfile.js
 import React, { useState } from 'react';
 import axios from 'axios';
 
